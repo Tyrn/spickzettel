@@ -1,0 +1,7 @@
+res*.png
+diff*.png
+*.pdf
+*.htm
+*.html
+*.epub
+/local/
