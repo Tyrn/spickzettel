@@ -9,7 +9,7 @@
 
 #show: cram-snap.with(
   title: [DMS niri Cheatsheet],
-  icon: image("git-icon.svg"),
+  icon: image("niri-simple.svg"),
   column-number: 3,
 )
 
