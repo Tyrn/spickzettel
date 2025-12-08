@@ -21,6 +21,7 @@
   [`␣⮐⎋|`], [Space, Enter, Esc, _Or_],
   [`⮜⮟⮝⮞`], [Ordinary arrows],
   [`⥾⤥⤣⥿`], [Home, PgDn, PgUp, End],
+  [`☉⎙`], [Mousewheel, PrtSc],
 )
 
 #table(
