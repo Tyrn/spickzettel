@@ -9,6 +9,7 @@
 
 #show: cram-snap.with(
   title: [DMS niri Cheatsheet],
+  subtitle: [DankMaterialShell & niri],
   icon: image("niri-simple.svg"),
   column-number: 3,
 )
@@ -71,6 +72,33 @@
 
 #table(
   theader[Workspaces],
+  [`ᛞ⤥ | ᛞu`], [Focus to Wspace Down],
+  [`ᛞ⤣ | ᛞi`], [Focus to Wspace Up],
+  [`ᛞ⌃⤥ | ᛞ⌃u`], [Move Col to Wspace Down],
+  [`ᛞ⌃⤣ | ᛞ⌃i`], [Move Col to Wspace Up],
+  [`ᛞᛏ⤥ | ᛞᛏu`], [Move Wspace Down],
+  [`ᛞᛏ⤣ | ᛞᛏi`], [Move Wspace Up],
+  [`ᛞ(1..9)`], [Select Wspace],
+  [`ᛞᛏ(1..9)`], [Move Col to Wspace],
+)
+
+#table(
+  theader[Columns],
+  [`ᛞ[`], [Cons/Expel Win Left],
+  [`ᛞ]`], [Cons/Expel Win Right],
+  [`ᛞ.`], [Expel Win from Col],
+  [`ᛞr`], [Switch Col Width],
+  [`ᛞᛏr`], [Switch Win Height],
+  [`ᛞ⌃r`], [Reset Win Height],
+  [`ᛞ⌃f`], [Expand Col to Width],
+  [`ᛞc`], [Center Col],
+  [`ᛞ⌃c`], [Center Visible Cols],
+  [`ᛞ-`], [Col Width -10%],
+  [`ᛞ=`], [Col Width +10%],
+  [`ᛞᛏ-`], [Win Height -10%],
+  [`ᛞᛏ=`], [Win Height +10%],
+  [``], [],
+  [``], [],
   [``], [],
   [``], [],
   [``], [],
