@@ -43,6 +43,7 @@
   [`ᛞᛅl`], [Lock Screen],
   [`ᛞᛏe`], [Quit],
   [`⌃ᛅ␡`], [Toggle Sys Monitor],
+  [`ᛞ⎋`], [Toggle Hotkeys],
 )
 
 #table(
@@ -69,6 +70,7 @@
   [`ᛞ⌃(h|j|k|l)`], [Focus Monitor],
   [`ᛞᛏ⌃(⮜|⮟|⮝|⮞)`], [Move Col to Monitor],
   [`ᛞᛏ⌃(h|j|k|l)`], [Move Col to Monitor],
+  [`ᛞᛏp`], [Power off Monitors],
 )
 
 #table(
@@ -98,10 +100,20 @@
   [`ᛞ=`], [Col Width +10%],
   [`ᛞᛏ-`], [Win Height -10%],
   [`ᛞᛏ=`], [Win Height +10%],
-  [``], [],
-  [``], [],
-  [``], [],
-  [``], [],
+)
+
+#table(
+  theader[Screenshots],
+  [`⎙`], [Screenshot],
+  [`⌃⎙`], [Take Screen],
+  [`ᛅ⎙`], [Take Win],
+)
+#table(
+  theader[Mousewheel],
+  [`ᛞ☉`], [Change Wspace],
+  [`ᛞᛏ☉`], [Change Col],
+  [`ᛞ⌃☉`], [Move Col to Wspace],
+  [`ᛞ⌃ᛏ☉`], [Move Col],
   [``], [],
   [``], [],
 )
