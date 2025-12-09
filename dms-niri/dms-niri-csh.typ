@@ -29,7 +29,7 @@
   [`ᛞd | ᛞ⇆`], [Toggle Overview],
   [`ᛞᛏ/`], [Show Hotkeys],
   [`ᛞt`], [Terminal],
-  [`⌃␣`], [App Launcher],
+  [`⌃␣`], [App Launcher, #strike[`ᛞ␣`]],
   [`ᛞv`], [Clipboard Manager],
   [`ᛞm`], [Sys Monitor],
   [`ᛞ,`], [Settings],
