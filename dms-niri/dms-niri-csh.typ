@@ -114,6 +114,4 @@
   [`ᛞᛏ☉`], [Change Col],
   [`ᛞ⌃☉`], [Move Col to Wspace],
   [`ᛞ⌃ᛏ☉`], [Move Col],
-  [``], [],
-  [``], [],
 )
