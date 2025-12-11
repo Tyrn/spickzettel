@@ -10,7 +10,7 @@
 #show: cram-snap.with(
   title: [DMS niri Cheatsheet],
   subtitle: [DankMaterialShell & niri],
-  icon: image("niri-simple.svg"),
+  icon: image("gnome-svgrepo-com.svg"),
   column-number: 3,
 )
 
