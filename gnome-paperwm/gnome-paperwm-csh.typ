@@ -32,7 +32,7 @@
 
 #table(
   theader[Security],
-  [`ᛞᛅl`], [Lock Screen],
+  [`⌃␡`], [Lock Screen\*],
 )
 
 #table(
@@ -98,4 +98,9 @@
   [`ᛞᛏ☉`], [Change Col],
   [`ᛞ⌃☉`], [Move Col to Wspace],
   [`ᛞ⌃ᛏ☉`], [Move Col],
+)
+
+#table(
+  theader[Notes],
+  [`*`], [To be defined manually],
 )
