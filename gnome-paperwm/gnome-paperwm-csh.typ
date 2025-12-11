@@ -39,7 +39,7 @@
   theader[Windows],
   [`ᛞ⮐ | ᛞn`], [Duplicate Win],
   [`ᛞ⌫`], [Close Window],
-  [`ᛞ, | ᛞ.`], [Move Focus ⮜⮞],
+  [`ᛞ(,|.)`], [Move Focus ⮜⮞],
   [`ᛞ(⮜|⮟|⮝|⮞)`], [Move Focus],
   [`ᛞ⥾`], [Move Focus Home],
   [`ᛞ⥿`], [Move Focus End],
@@ -49,6 +49,25 @@
   [`ᛏ⌃ᛅ⇆`], [Cycle Scratch ⮜],
   [`ᛞᛏc`], [Switch Focus Modes],
   [`ᛞᛏw`], [Switch Creation Modes],
+  [`ᛞ⌃(,|.)`], [Move Win ⮜⮞],
+  [`ᛞᛏ(,|.)`], [Move Win ⮜⮞],
+  [`ᛞ⌃(⮜|⮟|⮝|⮞)`], [Move Win],
+  [`ᛞᛏf`], [Toggle Fullscreen],
+)
+
+#table(
+  theader[Columns],
+  [`ᛞi`], [Stack Wins],
+  [`ᛞo`], [Unstack Wins],
+  [`ᛞᛏo`], [Unstack Focus],
+  [`ᛞc`], [Center Win],
+  [`ᛞf`], [Toggle Full Width],
+  [`ᛞᛏ(+|-)`], [Inc/dec Win Height],
+  [`ᛞ(+|-)`], [Inc/dec Win Width],
+  [`ᛞr`], [Cycle through Width],
+  [`ᛞᛅr`], [Cycle through Width ?],
+  [`ᛞᛏᛅr`], [Cycle through Width ⮜?],
+  [`ᛞt`], [Take Wind Drop ?],
 )
 
 // Non-toxic backtick [ˋ] U+02CB
