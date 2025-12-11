@@ -8,8 +8,8 @@
 #set text(font: "Arial", size: 11pt)
 
 #show: cram-snap.with(
-  title: [DMS niri Cheatsheet],
-  subtitle: [DankMaterialShell & niri],
+  title: [PaperWM Cheatsheet],
+  subtitle: [GNOME tiling extension],
   icon: image("gnome-svgrepo-com.svg"),
   column-number: 3,
 )
@@ -21,34 +21,23 @@
   [`␣⮐⎋|`], [Space, Enter, Esc, _Or_],
   [`⮜⮟⮝⮞`], [Ordinary arrows],
   [`⥾⤥⤣⥿`], [Home, PgDn, PgUp, End],
-  [`☉⎙`], [Mousewheel, PrtSc],
+  [`⌫☉⎙`], [Backspace, Mousewheel, PrtSc],
 )
 
 #table(
   theader[System & Overview],
-  [`ᛞd | ᛞ⇆`], [Toggle Overview],
-  [`ᛞᛏ/`], [Show Hotkeys],
-  [`ᛞt`], [Terminal],
-  [`⌃␣`], [App Launcher, #strike[`ᛞ␣`]],
-  [`ᛞv`], [Clipboard Manager],
-  [`ᛞm`], [Sys Monitor],
-  [`ᛞ,`], [Settings],
-  [`ᛞy`], [Wallpapers],
-  [`ᛞn`], [Notifications],
-  [`ᛞᛏn`], [Notepad],
+  [`ᛞᛏt`], [Terminal\*],
+  [`ᛞ`], [App Launcher],
 )
 
 #table(
   theader[Security],
   [`ᛞᛅl`], [Lock Screen],
-  [`ᛞᛏe`], [Quit],
-  [`⌃ᛅ␡`], [Toggle Sys Monitor],
-  [`ᛞ⎋`], [Toggle Hotkeys],
 )
 
 #table(
   theader[Windows],
-  [`ᛞq`], [Close Window],
+  [`ᛞ⌫`], [Close Window],
   [`ᛞf`], [Maximize Col],
   [`ᛞᛏf`], [Full Screen],
   [`ᛞᛏt`], [Toggle Float],
@@ -66,11 +55,10 @@
 
 #table(
   theader[Monitors],
-  [`ᛞ⌃(⮜|⮞)`], [Focus Monitor],
-  [`ᛞ⌃(h|j|k|l)`], [Focus Monitor],
-  [`ᛞᛏ⌃(⮜|⮟|⮝|⮞)`], [Move Col to Monitor],
-  [`ᛞᛏ⌃(h|j|k|l)`], [Move Col to Monitor],
-  [`ᛞᛏp`], [Power off Monitors],
+  [`ᛞᛏ(⮜|⮟|⮝|⮞)`], [Switch to Monitor],
+  [`ᛏ⌃ᛅ(⮜|⮟|⮝|⮞)`], [Move Wspace to Monitor],
+  [`ᛞᛅ(⮜|⮟|⮝|⮞)`], [Swap Wspace with Monitor],
+  [`ᛞᛏ⌃(⮜|⮟|⮝|⮞)`], [Move Win to Monitor],
 )
 
 #table(
