@@ -53,24 +53,25 @@
   [`ᛞ⌃⥿`], [Move Col End],
 )
 
+// Non-toxic backtick [ˋ] U+02CB
+
+#table(
+  theader[Workspaces],
+  [`ᛞˋ`], [Switch to PAW],
+  [`ᛞᛏˋ`], [Switch to PAW ⮜],
+  [`ᛞ⌃ˋ`], [Move Win to PAW],
+  [`ᛞ⌃ᛏˋ`], [Move Win to PAW ⮜],
+  [`ᛞ(⤥|⤣)`], [Switch to Wspace ⮟⮝],
+  [`ᛞ⌃(⤥|⤣)`], [Move Win one Wspace ⮟⮝],
+  [`ᛞ⌃b`], [Toggle TopBar],
+)
+
 #table(
   theader[Monitors],
   [`ᛞᛏ(⮜|⮟|⮝|⮞)`], [Switch to Monitor],
   [`ᛏ⌃ᛅ(⮜|⮟|⮝|⮞)`], [Move Wspace to Monitor],
   [`ᛞᛅ(⮜|⮟|⮝|⮞)`], [Swap Wspace with Monitor],
   [`ᛞᛏ⌃(⮜|⮟|⮝|⮞)`], [Move Win to Monitor],
-)
-
-#table(
-  theader[Workspaces],
-  [`ᛞ⤥ | ᛞu`], [Focus to Wspace Down],
-  [`ᛞ⤣ | ᛞi`], [Focus to Wspace Up],
-  [`ᛞ⌃⤥ | ᛞ⌃u`], [Move Col to Wspace Down],
-  [`ᛞ⌃⤣ | ᛞ⌃i`], [Move Col to Wspace Up],
-  [`ᛞᛏ⤥ | ᛞᛏu`], [Move Wspace Down],
-  [`ᛞᛏ⤣ | ᛞᛏi`], [Move Wspace Up],
-  [`ᛞ(1..9)`], [Select Wspace],
-  [`ᛞᛏ(1..9)`], [Move Col to Wspace],
 )
 
 #table(
