@@ -37,26 +37,25 @@
 
 #table(
   theader[Windows],
+  [`ᛞ⮐ | ᛞn`], [Duplicate Win],
   [`ᛞ⌫`], [Close Window],
-  [`ᛞf`], [Maximize Col],
-  [`ᛞᛏf`], [Full Screen],
-  [`ᛞᛏt`], [Toggle Float],
-  [`ᛞᛏv`], [Float/Tile Switch],
-  [`ᛞw`], [Toggle CTD ?],
+  [`ᛞ, | ᛞ.`], [Move Focus ⮜⮞],
   [`ᛞ(⮜|⮟|⮝|⮞)`], [Move Focus],
-  [`ᛞ(h|j|k|l)`], [Move Focus],
-  [`ᛞᛏ(⮜|⮟|⮝|⮞)`], [Move Window],
-  [`ᛞᛏ(h|j|k|l)`], [Move Window],
   [`ᛞ⥾`], [Move Focus Home],
   [`ᛞ⥿`], [Move Focus End],
-  [`ᛞ⌃⥾`], [Move Col Home],
-  [`ᛞ⌃⥿`], [Move Col End],
+  [`ᛞ⇆ | ᛅ⇆`], [Cycle Focus],
+  [`ᛞᛏ⇆ | ᛅᛏ⇆`], [Cycle Focus ⮜],
+  [`⌃ᛅ⇆`], [Cycle Scratch],
+  [`ᛏ⌃ᛅ⇆`], [Cycle Scratch ⮜],
+  [`ᛞᛏc`], [Switch Focus Modes],
+  [`ᛞᛏw`], [Switch Creation Modes],
 )
 
 // Non-toxic backtick [ˋ] U+02CB
 
 #table(
   theader[Workspaces],
+  [_PAW_:], [_Previously Active Wspace_],
   [`ᛞˋ`], [Switch to PAW],
   [`ᛞᛏˋ`], [Switch to PAW ⮜],
   [`ᛞ⌃ˋ`], [Move Win to PAW],
@@ -74,29 +73,6 @@
   [`ᛞᛏ⌃(⮜|⮟|⮝|⮞)`], [Move Win to Monitor],
 )
 
-#table(
-  theader[Columns],
-  [`ᛞ[`], [Cons/Expel Win Left],
-  [`ᛞ]`], [Cons/Expel Win Right],
-  [`ᛞ.`], [Expel Win from Col],
-  [`ᛞr`], [Switch Col Width],
-  [`ᛞᛏr`], [Switch Win Height],
-  [`ᛞ⌃r`], [Reset Win Height],
-  [`ᛞ⌃f`], [Expand Col to Width],
-  [`ᛞc`], [Center Col],
-  [`ᛞ⌃c`], [Center Visible Cols],
-  [`ᛞ-`], [Col Width -10%],
-  [`ᛞ=`], [Col Width +10%],
-  [`ᛞᛏ-`], [Win Height -10%],
-  [`ᛞᛏ=`], [Win Height +10%],
-)
-
-#table(
-  theader[Screenshots],
-  [`⎙`], [Screenshot],
-  [`⌃⎙`], [Take Screen],
-  [`ᛅ⎙`], [Take Win],
-)
 #table(
   theader[Mousewheel],
   [`ᛞ☉`], [Change Wspace],
