@@ -16,4 +16,4 @@ while IFS= read -r typ_file; do
 
   echo "Compiling: $clean_name → $pdf_name"
   typst compile "$typ_file" "$out_dir/$pdf_name"
-done < <(find . -name '*.typ' -type f)
+done < <(find . -name 'csh.typ' -type f)
