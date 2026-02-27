@@ -17,7 +17,7 @@
 #table(
   theader[Conventions],
   [`ᛞ`], [Super (Win)],
-  [`⌃ᛅᛏ␡⇆`], [Ctrl, Alt, Shift, Del, Tab],
+  [`⌃ᛅᛏ␥⇆`], [Ctrl, Alt, Shift, Del, Tab],
   [`␣⮐⎋|`], [Space, Enter, Esc, _Or_],
   [`⮜⮟⮝⮞`], [Ordinary arrows],
   [`⥾⤥⤣⥿`], [Home, PgDn, PgUp, End],
@@ -32,7 +32,7 @@
 
 #table(
   theader[Security],
-  [`⌃␡`], [Lock Screen\*],
+  [`⌃␥`], [Lock Screen\*],
 )
 
 #table(

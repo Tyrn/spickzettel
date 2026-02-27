@@ -17,7 +17,7 @@
 #table(
   theader[Conventions],
   [`ᛞ`], [Super (Win)],
-  [`⌃ᛅᛏ␡⇆`], [Ctrl, Alt, Shift, Del, Tab],
+  [`⌃ᛅᛏ␥⇆`], [Ctrl, Alt, Shift, Del, Tab],
   [`␣⮐⎋|`], [Space, Enter, Esc, _Or_],
   [`⮜⮟⮝⮞`], [Ordinary arrows],
   [`⥾⤥⤣⥿`], [Home, PgDn, PgUp, End],
@@ -42,7 +42,7 @@
   theader[Security],
   [`ᛞᛅl`], [Lock Screen],
   [`ᛞᛏe`], [Quit],
-  [`⌃ᛅ␡`], [Toggle Sys Monitor],
+  [`⌃ᛅ␥`], [Toggle Sys Monitor],
   [`ᛞ⎋`], [Toggle Hotkeys],
 )
 
