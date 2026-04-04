@@ -40,8 +40,9 @@
 
 #table(
   theader[Security],
+  [`ᛞx`], [Toggle Power Menu],
   [`ᛞᛅl`], [Lock Screen],
-  [`ᛞᛏe`], [Quit],
+  [`ᛞᛏe`], [Exit niri],
   [`⌃ᛅ␥`], [Toggle Sys Monitor],
   [`ᛞ⎋`], [Toggle Hotkeys],
 )
