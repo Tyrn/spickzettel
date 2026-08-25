@@ -27,7 +27,7 @@
   // Configure the page.
   set page(
     paper: paper-size,
-    flipped: true,
+    flipped: false, // Modified.
     margin: ("top": 8mm, "rest": 5mm),
     header-ascent: 1.5mm,
     header: align(center, text(
@@ -58,5 +58,5 @@
   show heading.where(level: 5): set block(fill: rgb(level5_color))
   set heading(numbering: "1.1")
 
-  columns(4, gutter: 2mm, body)
+  columns(2, gutter: 2mm, body) // Modified
 }
