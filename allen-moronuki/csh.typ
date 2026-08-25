@@ -11,3 +11,4 @@
 #include "sections/typeclasses.typ"
 #include "sections/morphisms.typ"
 #include "sections/types.typ"
+#include "sections/algebraic-datatypes.typ"

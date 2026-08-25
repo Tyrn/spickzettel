@@ -1,4 +1,3 @@
 #import "../utils.typ": *
 
-= Types
-== Polymorphism
+= Algebraic datatypes
