@@ -14,12 +14,12 @@
   body,
 ) = {
   let line_skip = 0.35em
-  let font_size = 8pt // Modified.
-  let level1_color = "#8c195f"
-  let level2_color = "#a12b66"
-  let level3_color = "#b63d6d"
-  let level4_color = "#cb4f74"
-  let level5_color = "#C63B65"
+  let font_size = 8pt // Modified; colors, too.
+  let level1_color = "#3B170B"
+  let level2_color = "#7A3B1E"
+  let level3_color = "#B86133"
+  let level4_color = "#F2C08A"
+  let level5_color = "#FBECE0"
 
   set block(spacing: line_skip)
   set par(leading: line_skip, justify: true)
