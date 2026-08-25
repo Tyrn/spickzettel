@@ -1,4 +1,5 @@
-#import "@preview/knowledge-key:1.0.2": *
+//#import "@preview/knowledge-key:1.0.2": *
+#import "lib.typ": *
 
 #show: knowledge-key.with(
   title: [The Nuts and Bolts of Haskell],
