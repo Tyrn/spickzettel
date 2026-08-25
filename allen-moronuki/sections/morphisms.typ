@@ -5,3 +5,5 @@
 == Catamorphisms
 
 == Anamorphisms
+
+== Hylomorphisms
