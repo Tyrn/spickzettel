@@ -7,5 +7,7 @@
 
 #import "utils.typ": *
 
-#include "sections/01-introduction.typ"
-#include "sections/02.typ"
+#include "sections/introduction.typ"
+#include "sections/typeclasses.typ"
+#include "sections/morphisms.typ"
+#include "sections/types.typ"

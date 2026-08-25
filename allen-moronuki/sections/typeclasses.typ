@@ -1,9 +1,5 @@
 #import "../utils.typ": *
 
-= Introduction
-
-*Sources*: Christopher Allen, Julie Moronuki, _Haskell Programming from First Principles_ (A&M); Miscellaneous\
-
 = Typeclasses
 == Value-Level Structures (Kind Type)
 === Semigroup (The Power of Appending)
