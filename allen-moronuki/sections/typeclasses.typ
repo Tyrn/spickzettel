@@ -2,7 +2,7 @@
 
 = Typeclasses
 == Value-Level Structures (Kind Type)
-=== Semigroup (The Power of Appending)
+=== Semigroup (Appending)
 
 *Provides*: associative binary operator `(<>)`
 
@@ -25,8 +25,8 @@ class Semigroup a => Monoid a where
   mconcat = foldr mappend mempty
 ```]
 
-== Container/Context Structures (Kind Type -> Type)
-=== Functor (The Power of Reaching Inside)
+== Context Structures (Kind Type -> Type)
+=== Functor (Reaching Inside)
 
 #sourcecode[```haskell
 type Functor :: (* -> *) -> Constraint
@@ -35,7 +35,7 @@ class Functor f where
   (<$) :: a -> f b -> f a
 ```]
 
-=== Applicative (The Power of Independent Contexts)
+=== Applicative (Independent Contexts)
 
 #sourcecode[```haskell
 type Applicative :: (* -> *) -> Constraint
@@ -52,7 +52,7 @@ class Functor f => Applicative f where
 [3,5,4,8]
 ```]
 
-=== Monad (The Power of Dependent Contexts)
+=== Monad (Dependent Contexts)
 
 #sourcecode[```haskell
 type Monad :: (* -> *) -> Constraint

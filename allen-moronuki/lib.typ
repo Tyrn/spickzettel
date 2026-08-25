@@ -1,4 +1,4 @@
-
+// v1.0.2
 #let knowledge-key(
   title: [Paper Title],
 
@@ -11,19 +11,19 @@
   paper-size: "a4",
 
   // The content.
-  body
+  body,
 ) = {
   let line_skip = 0.35em
-  let font_size = 6pt
-  let level1_color = "#8c195f";
-  let level2_color = "#a12b66"; 
-  let level3_color = "#b63d6d"; 
-  let level4_color = "#cb4f74"; 
-  let level5_color = "#C63B65"; 
+  let font_size = 8pt // Modified.
+  let level1_color = "#8c195f"
+  let level2_color = "#a12b66"
+  let level3_color = "#b63d6d"
+  let level4_color = "#cb4f74"
+  let level5_color = "#C63B65"
 
   set block(spacing: line_skip)
   set par(leading: line_skip, justify: true)
-  
+
   // Configure the page.
   set page(
     paper: paper-size,
@@ -46,7 +46,7 @@
   show heading: set text(white, size: font_size)
   show heading: set block(
     radius: 0.65mm,
-    inset: 0.65mm,
+    inset: 1.2mm, // Modified.
     width: 100%,
     above: line_skip,
     below: line_skip,
