@@ -34,6 +34,12 @@ class Functor f where
   fmap :: (a -> b) -> f a -> f b
   (<$) :: a -> f b -> f a
 ```]
+*Equational laws*:
+
+#sourcecode[```haskell
+fmap id = id
+fmap (g . h) = fmap g . fmap h
+```]
 
 === Applicative (Independent Contexts)
 
@@ -45,6 +51,30 @@ class Functor f => Applicative f where
   liftA2 :: (a -> b -> c) -> f a -> f b -> f c
   (*>) :: f a -> f b -> f b
   (<*) :: f a -> f b -> f a
+```]
+
+*Equational laws*:\
+(1) hs-id; (2) homomorphism;
+(3) interchange; (4) composition;
+#sourcecode[```haskell
+pure id <*> x = x
+pure (g x) = pure g <*> pure x
+x <*> pure y = pure (\g -> g y) <*> x
+x <*> (y <*> z) = (pure (.) <*> x <*> y) <*> z
+```]
+*Examples*:\
+
+(1)
+#sourcecode[```haskell
+  -- Boo
+```]
+
+#sourcecode[```haskell
+  -- Boo
+```]
+
+#sourcecode[```haskell
+  -- Boo
 ```]
 
 #sourcecode[```haskell
