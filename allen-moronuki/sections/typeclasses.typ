@@ -168,6 +168,7 @@ class Applicative m => Monad m where
   return :: a -> m a
   -- About flattening:
   join :: Monad m => m (m a) -> m a
+  join m = m >>= id
   m >>= f = join (fmap f m)
 ```]
 
