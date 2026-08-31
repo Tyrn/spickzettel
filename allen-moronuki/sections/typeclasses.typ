@@ -166,6 +166,9 @@ class Applicative m => Monad m where
   (>>=) :: m a -> (a -> m b) -> m b  -- bind
   (>>) :: m a -> m b -> m b          -- sequence
   return :: a -> m a
+  -- About flattening:
+  join :: Monad m => m (m a) -> m a
+  m >>= f = join (fmap f m)
 ```]
 
 *Equational laws*:\
