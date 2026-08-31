@@ -151,6 +151,7 @@ liftA2 (+) (Just 5) (Just 7)  -- Just 12
 (+) <$> Just 5 <*> Just 7     -- Just 12
 (+) <$> pure 5 <*> pure 7 :: IO Int        -- 12
 (+) <$> pure 5 <*> pure 7 :: Maybe Int     -- Just 12
+(,) <$> Just 1 <*> Just 2     -- Just (1,2)
 ```]
 
 Cartesian product:
