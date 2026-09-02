@@ -86,6 +86,17 @@ fmap id = id
 fmap (g . h) = fmap g . fmap h
 ```]
 
+*Examples*:\
+Transforming input with fmap aka `(<$>)`:
+#sourcecode[```haskell
+fmap :: (a -> b) -> IO a -> IO b
+```]
+#sourcecode[```haskell
+-- :t map toUpper <$> getLine
+-- map toUpper <$> getLine :: IO [Char]
+map toUpper <$> getLine
+```]
+
 === Applicative (Independent Contexts)
 
 #sourcecode[```haskell
@@ -143,6 +154,11 @@ pure (.) <*> Just (+1) <*> Just (*2) <*> Just 5  -- Just 11
 Just (+1) <*> (Just (*2) <*> Just 5)             -- Just 11
 ```]
 
+Cartesian product:
+#sourcecode[```haskell
+[(+1), (*2)] <*> [2, 4]  -- [3,5,4,8]
+```]
+
 Lifting, or the invisible IO box:
 #sourcecode[```haskell
 liftA2 (+) (pure 5) (pure 7)  -- 12
@@ -154,10 +170,11 @@ liftA2 (+) (Just 5) (Just 7)  -- Just 12
 (,) <$> Just 1 <*> Just 2     -- Just (1,2)
 ```]
 
-Cartesian product:
+Combine independent inputs with `(<*>)`:
 #sourcecode[```haskell
-[(+1), (*2)] <*> [2, 4]  -- [3,5,4,8]
+-- [(+1), (*2)] <*> [2, 4]  -- [3,5,4,8]
 ```]
+
 
 === Monad (Dependent Contexts)
 
