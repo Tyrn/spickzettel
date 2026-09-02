@@ -87,7 +87,7 @@ fmap (g . h) = fmap g . fmap h
 ```]
 
 *Examples*:\
-Transforming input with fmap aka `(<$>)`:
+Transformation of an input with fmap aka `(<$>)`:
 #sourcecode[```haskell
 fmap :: (a -> b) -> IO a -> IO b
 ```]
@@ -159,7 +159,7 @@ Cartesian product:
 [(+1), (*2)] <*> [2, 4]  -- [3,5,4,8]
 ```]
 
-Lifting, or the invisible IO box:
+Lifting, or the invisible `IO` box:
 #sourcecode[```haskell
 liftA2 (+) (pure 5) (pure 7)  -- 12
 liftA2 (+) (Just 5) (Just 7)  -- Just 12
@@ -170,11 +170,20 @@ liftA2 (+) (Just 5) (Just 7)  -- Just 12
 (,) <$> Just 1 <*> Just 2     -- Just (1,2)
 ```]
 
-Combine independent inputs with `(<*>)`:
+Combination of inputs with apply `(<*>)`:
 #sourcecode[```haskell
--- [(+1), (*2)] <*> [2, 4]  -- [3,5,4,8]
+(<*>) :: IO (a -> b) -> IO a -> IO b
 ```]
 
+#sourcecode[```haskell
+(\x -> \y -> x <> " " <> y <> " Jr") <$> getLine <*> getLine
+-- "Guy Fawkes Jr" is a possible result
+```]
+
+With input prompts:
+#sourcecode[```haskell
+(\x y -> x <> " " <> y <> " Jr") <$> (putStr "> " *> getLine) <*> (putStr "> " *> getLine)
+```]
 
 === Monad (Dependent Contexts)
 
