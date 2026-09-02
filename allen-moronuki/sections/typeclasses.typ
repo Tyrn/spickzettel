@@ -87,7 +87,7 @@ fmap (g . h) = fmap g . fmap h
 ```]
 
 *Examples*:\
-Transformation of an input with fmap aka `(<$>)`:
+Transformation of an input with fmap `(<$>)`:
 #sourcecode[```haskell
 fmap :: (a -> b) -> IO a -> IO b
 ```]
@@ -195,8 +195,8 @@ class Applicative m => Monad m where
   return :: a -> m a
   -- About flattening:
   join :: Monad m => m (m a) -> m a
-  join m = m >>= id
-  m >>= f = join (fmap f m)
+  join m = m >>= id                  -- ⮟ ⮝
+  m >>= f = join (fmap f m)          -- ⮟ ⮝
 ```]
 
 *Equational laws*:\
@@ -232,15 +232,23 @@ stays the original monadic value.
 Just 2 >>= (\x -> (Just (x * 3) >>= \y -> Just (y + 1)))  -- Just 7
 ```]
 
-Make the unwelcome result disappear:
+Bind `(>>=)` revealed:
 #sourcecode[```haskell
--- Find all pairs of numbers (x, y) from two lists that sum to exactly 5
-findPairs :: [(Int, Int)]
-findPairs = do
-  x <- [1, 2, 3, 4]    -- Step 1: Pick an x
-  y <- [1, 2, 3, 4]    -- Step 2: Pick a y
-  if x + y == 5
-    then return (x, y) -- Step 3: Keep the pair if it fits the rule
-    else []            -- Step 4: Collapse this timeline if it fails!
--- Output: [(1,4),(2,3),(3,2),(4,1)]
+-- Only odd numbers are good enough for us
+Just 1 >>= \x -> if odd x then Just x else Nothing  -- Just 1
+```]
+
+#sourcecode[```haskell
+[1..8] >>= \x -> if odd x then [x] else []          -- [1,3,5,7]
+concatMap (\x -> if odd x then [x] else []) [1..8]  -- [1,3,5,7]
+-- Is it really a coincidence?
+```]
+
+No. It's because
+#sourcecode[```haskell
+instance Applicative [] where
+  pure x = [x]   -- Wraps a value in a list
+instance Monad [] where
+  xs >>= f = concatMap f xs
+  return = pure
 ```]
