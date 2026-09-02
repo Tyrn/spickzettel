@@ -180,7 +180,7 @@ Combination of inputs with apply `(<*>)`:
 -- "Guy Fawkes Jr" is a possible result
 ```]
 
-With input prompts:
+With input prompts (no `Backspace`, no nothing; discover `Haskeline`):
 #sourcecode[```haskell
 (\x y -> x <> " " <> y <> " Jr") <$> (putStr "> " *> getLine) <*> (putStr "> " *> getLine)
 ```]
