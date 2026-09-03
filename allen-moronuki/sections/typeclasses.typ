@@ -125,9 +125,9 @@ x <*> (y <*> z) = (pure (.) <*> x <*> y) <*> z
 #sourcecode[```haskell
 pure = return
 -- Tanto monta, monta tanto:
-mf <*> mx   = mf >>= (\f -> mx >>= (\x -> pure (f x))) -- or
-(<*>) mf mx = mf >>= \f -> mx >>= \x -> pure (f x)     -- or
-(<*>) mf mx = do f <- mf; x <-mx; pure (f x)
+mf <*> mx   = mf >>= (\f -> mx >>= (\x -> pure (f x)))
+(<*>) mf mx = mf >>= \f -> mx >>= \x -> pure (f x)
+(<*>) mf mx = do f <- mf; x <- mx; pure (f x)
 ```]
 
 *Examples*:\
