@@ -194,7 +194,12 @@ class Applicative m => Monad m where
   (>>=) :: m a -> (a -> m b) -> m b  -- bind
   (>>) :: m a -> m b -> m b          -- sequence
   return :: a -> m a
-  -- About flattening:
+  -- Kleisli composition, or fish:
+  (>=>) :: (a -> m b) -> (b -> m c) -> a -> m c
+  (f >=> g) x = f x >>= g            -- with bind
+  (>=>) f g = (>>= g) . f
+  (f >=> g) x = do y <- f x; g y     -- with do
+  -- About flattening (concat for everything):
   join :: Monad m => m (m a) -> m a
   join m = m >>= id                  -- ⮟ ⮝
   m >>= f = join (fmap f m)          -- ⮟ ⮝
@@ -252,4 +257,5 @@ instance Applicative [] where
 instance Monad [] where
   xs >>= f = concatMap f xs
   return = pure
+  (>=>) f g = concatMap g . f
 ```]
