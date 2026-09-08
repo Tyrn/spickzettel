@@ -20,6 +20,7 @@
   [`e`], [Exception value],
   [`s`], [Monad state value],
   [`r`], [Monad reader value],
+  [`w`], [Monad writer value],
   [`t`], [Foldable or Traversable type variable],
   [`f`], [Functor or Applicative type variable],
   [`mX`], [Maybe variable],
