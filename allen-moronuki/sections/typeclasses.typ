@@ -1,6 +1,30 @@
 #import "../utils.typ": *
 
 = Typeclasses
+*Name conventions*:
+
+#table(
+  columns: 2,
+  stroke: none,
+  inset: (left: 0pt, right: 10pt, y: 0pt),
+  row-gutter: 3pt,
+
+  [_Variable_], [_Convention_],
+  [`a,b,c..`], [Type level variable],
+  [`x,y,z..`], [Value variable],
+  [`f,g,h..`], [Higher order function value],
+  [`x,y`], [List head value],
+  [`xs, ys`], [List tail value],
+  [`m`], [Monadic type variable],
+  [`t`], [Monad transformer variable],
+  [`e`], [Exception value],
+  [`s`], [Monad state value],
+  [`r`], [Monad reader value],
+  [`t`], [Foldable or Traversable type variable],
+  [`f`], [Functor or Applicative type variable],
+  [`mX`], [Maybe variable],
+)
+
 == Value-Level Structures (Kind Type)
 
 _Kind_ is the type of a type. Speaking of typeclasses:
@@ -75,8 +99,9 @@ Monad contexts serve side effects.
 type Functor :: (* -> *) -> Constraint
 class Functor f where
   fmap :: (a -> b) -> f a -> f b
-  (<$) :: a -> f b -> f a  -- replace
   (<$>) = fmap
+  (<$) :: a -> f b -> f a  -- replace
+  (<$) a  f b = fmap (const a) f b
 ```]
 
 *Equational laws*:
