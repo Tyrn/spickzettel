@@ -32,7 +32,7 @@
 
 #table(
   theader[System & Overview],
-  [`ᛞd | ᛞ⇆`],
+  [`ᛞo | ᛞ⇆`],
   [Toggle Overview],
   [`ᛞᛏ/`],
   [Show Hotkeys],
