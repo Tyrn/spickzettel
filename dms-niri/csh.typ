@@ -48,9 +48,9 @@
   [Settings],
   [`ᛞy`],
   [Wallpapers],
-  [`ᛞn`],
+  [`ᛞ⌃n`],
   [Notifications],
-  [`ᛞᛏn`],
+  [`ᛞn`],
   [Notepad],
 )
 
